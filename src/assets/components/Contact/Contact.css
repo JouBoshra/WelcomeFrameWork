@@ -1,0 +1,20 @@
+.contact {
+  background-color: var(--home-bg-light);
+  color: var(--home-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .contact {
+  background-color: var(--home-bg-dark);
+  color: var(--home-text-dark);
+}
+
+.contact .MuiInputLabel-root,
+.contact .MuiInputBase-input {
+  transition: color 0.3s ease;
+}
+
+body.dark .contact .MuiInputLabel-root,
+body.dark .contact .MuiInputBase-input {
+  color: var(--home-text-dark); /* Ensure this color provides enough contrast */
+}

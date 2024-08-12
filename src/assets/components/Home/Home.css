@@ -1,0 +1,23 @@
+.main {
+  background-color: var(--home-bg-light);
+  color: var(--home-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .main {
+  background-color: var(--home-bg-dark);
+  color: var(--home-text-dark);
+}
+
+.homeContent h1,
+.homeContent p {
+  transition: color 0.3s ease;
+}
+
+body.dark .homeContent h1 {
+  color: var(--home-text-dark);
+}
+
+body.dark .homeContent p {
+  color: var(--home-text-dark);
+}

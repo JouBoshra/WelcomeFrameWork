@@ -1,0 +1,20 @@
+.about {
+  background-color: var(--home-bg-light);
+  color: var(--home-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .about {
+  background-color: var(--home-bg-dark);
+  color: var(--home-text-dark);
+}
+
+.about h2,
+.about p {
+  transition: color 0.3s ease;
+}
+
+body.dark .about h2,
+body.dark .about p {
+  color: var(--home-text-dark);
+}

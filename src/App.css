@@ -1,0 +1,77 @@
+:root {
+  --background-light: #ffffff;
+  --background-dark: #1a252f;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --navbar-light: #2c3d4f;
+  --navbar-dark: #2c3d4f;
+  --home-bg-light: #19bc9b;
+  --home-bg-dark: #0d151c;
+  --home-text-light: #ffffff;
+  --home-text-dark: #19bc9b;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+nav {
+  background-color: var(--navbar-light);
+  transition: background-color 0.3s ease;
+}
+
+body.dark nav {
+  background-color: var(--navbar-dark);
+}
+
+.main {
+  background-color: var(--home-bg-light);
+  color: var(--home-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark .main {
+  background-color: var(--home-bg-dark);
+  color: var(--home-text-dark);
+}
+
+#footerOne {
+  background-color: var(--navbar-light);
+  transition: background-color 0.3s ease;
+}
+
+body.dark #footerOne {
+  background-color: var(--navbar-dark);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar-wave {
+  animation: wave 0.5s ease-in-out;
+}
+
+.navbar-transition {
+  transition: transform 0.3s ease;
+}
+
+h1,
+p {
+  transition: color 0.3s ease;
+}
